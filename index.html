@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>相倚傍報你知｜試刊號・2026年春</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#f5f5f5;min-height:100vh;}
+
+.paper{font-family:'Noto Sans TC',sans-serif;background:#fff;color:#1a1a1a;max-width:860px;margin:0 auto;box-shadow:0 2px 24px rgba(0,0,0,0.08);}
+
+/* ── 報頭 ── */
+.masthead{padding:1.2rem 1.5rem 0;border-bottom:4px solid #1a1a1a;}
+.masthead-top{display:flex;justify-content:space-between;align-items:flex-end;gap:1rem;}
+.masthead-meta{font-size:10.5px;color:#555;line-height:2;min-width:130px;}
+.masthead-meta.right{text-align:right;}
+.masthead-center{text-align:center;flex:1;}
+.paper-name{font-family:'Noto Serif TC',serif;font-size:44px;font-weight:700;color:#1a1a1a;letter-spacing:5px;line-height:1.1;}
+.paper-romanji{font-size:12px;color:#e05a2b;letter-spacing:4px;margin-top:4px;font-weight:500;display:block;}
+.paper-subtitle{font-size:10.5px;color:#555;letter-spacing:1.5px;margin-top:6px;padding:4px 0;border-top:1px solid #ddd;border-bottom:1px solid #ddd;}
+
+/* ── 欄目列 ── */
+.nav-strip{display:flex;border-bottom:3px solid #1a1a1a;flex-wrap:wrap;}
+.nav-item{flex:1;text-align:center;padding:6px 4px;font-size:10.5px;font-weight:500;letter-spacing:1px;color:#1a1a1a;border-right:1px solid #1a1a1a;font-family:'Noto Serif TC',serif;}
+.nav-item:last-child{border-right:none;}
+.nav-item.c1{background:#fde68a;}.nav-item.c2{background:#a7f3d0;}.nav-item.c3{background:#bfdbfe;}
+.nav-item.c4{background:#fecaca;}.nav-item.c5{background:#e9d5ff;}.nav-item.c6{background:#fed7aa;}
+
+/* ── 頁面主體 ── */
+.page-body{padding:14px 20px 1rem;}
+
+/* ── 焦點卡片 ── */
+.lead-block-dark{background:#1a1a1a;border-radius:16px;padding:1.4rem 1.6rem;margin-bottom:10px;position:relative;overflow:hidden;cursor:pointer;transition:opacity .15s;}
+.lead-block-dark:hover{opacity:.92;}
+.lead-block-dark::before{content:"第一焦點";position:absolute;right:16px;top:12px;font-size:9px;letter-spacing:3px;color:#aaa;font-weight:500;}
+.kicker-dark{font-size:10px;letter-spacing:3px;color:#aaa;font-weight:500;margin-bottom:6px;}
+.headline-dark{font-family:'Noto Serif TC',serif;font-size:22px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:6px;}
+.sub-dark{font-size:11.5px;color:#f5c77e;font-weight:500;margin-bottom:8px;letter-spacing:1px;}
+.deck-dark{font-size:12px;color:#ccc;line-height:1.8;}
+.read-more-dark{display:inline-block;margin-top:10px;font-size:10px;color:#f5c77e;font-weight:500;letter-spacing:1px;border-bottom:1px solid #f5c77e;}
+
+.lead-block-red{background:#fecaca;border-radius:16px;padding:1.2rem 1.4rem;margin-bottom:10px;position:relative;overflow:hidden;cursor:pointer;transition:opacity .15s;}
+.lead-block-red:hover{opacity:.92;}
+.lead-block-red::before{content:"第二焦點";position:absolute;right:16px;top:12px;font-size:9px;letter-spacing:3px;color:#9a1a1a;font-weight:500;}
+.kicker-red{font-size:10px;letter-spacing:3px;color:#9a1a1a;font-weight:500;margin-bottom:4px;}
+.headline-red{font-family:'Noto Serif TC',serif;font-size:19px;font-weight:700;color:#1a1a1a;line-height:1.4;margin-bottom:6px;}
+.deck-red{font-size:11.5px;color:#3a3a3a;line-height:1.75;}
+.read-more-red{display:inline-block;margin-top:8px;font-size:10px;color:#9a1a1a;font-weight:500;letter-spacing:1px;border-bottom:1px solid #9a1a1a;}
+
+/* ── 數據橫幅 ── */
+.stat-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:12px;}
+.stat-item{border-radius:10px;padding:10px 8px;text-align:center;}
+.stat-item.s1{background:#fecaca;}.stat-item.s2{background:#fed7aa;}
+.stat-item.s3{background:#fde68a;}.stat-item.s4{background:#bfdbfe;}
+.stat-num{font-family:'Noto Serif TC',serif;font-size:22px;font-weight:700;color:#1a1a1a;line-height:1;}
+.stat-label{font-size:9.5px;color:#444;margin-top:4px;line-height:1.4;}
+
+/* ── 格線 ── */
+.two-col-top{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px;}
+.cmhc-two{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px;}
+.two-col{display:grid;grid-template-columns:2fr 1fr;gap:10px;margin-bottom:10px;}
+
+/* ── 卡片 ── */
+.card{border-radius:12px;padding:14px;font-size:14px;line-height:1.85;color:#1a1a1a;cursor:pointer;transition:transform .15s,box-shadow .15s;}
+.card:hover{box-shadow:0 4px 16px rgba(0,0,0,0.12);transform:translateY(-1px);}
+.card:active{transform:scale(0.98);}
+.card.bg-mint{background:#a7f3d0;}.card.bg-blue{background:#bfdbfe;}
+.card.bg-sky{background:#e0f2fe;}.card.bg-sky2{background:#bae6fd;}
+.card.bg-lav{background:#e9d5ff;}.card.bg-orange{background:#fed7aa;}
+.card.bg-rose{background:#ffe4e6;}.card.bg-lavbook{background:#f3e8ff;}
+
+.card .label{display:inline-block;font-size:9px;letter-spacing:2px;background:rgba(0,0,0,0.1);border-radius:20px;padding:1px 9px;margin-bottom:6px;color:#333;font-weight:500;}
+.card h3{font-family:'Noto Serif TC',serif;font-size:15px;font-weight:700;color:#1a1a1a;margin-bottom:6px;padding-bottom:5px;border-bottom:1px solid rgba(0,0,0,0.12);line-height:1.4;}
+.card .byline{font-size:11px;color:#555;margin-bottom:5px;}
+.pull-quote{font-family:'Noto Serif TC',serif;font-size:14px;font-weight:700;border-left:3px solid rgba(0,0,0,0.3);padding:4px 10px;margin:8px 0;border-radius:0 6px 6px 0;background:rgba(255,255,255,0.35);line-height:1.6;}
+.tag-pill{display:inline-block;font-size:10px;border-radius:20px;padding:2px 9px;margin-right:3px;margin-top:5px;background:rgba(0,0,0,0.08);color:#333;}
+.tap-hint{font-size:10px;color:rgba(0,0,0,0.4);text-align:right;margin-top:6px;letter-spacing:0.5px;}
+
+/* ── 研究數字小卡 ── */
+.research-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;margin:8px 0;}
+.rs-item{background:rgba(255,255,255,0.5);border-radius:7px;padding:6px;text-align:center;}
+.rs-num{font-family:'Noto Serif TC',serif;font-size:16px;font-weight:700;color:#be123c;line-height:1;}
+.rs-label{font-size:9px;color:#444;margin-top:2px;line-height:1.3;}
+
+/* ── 社區心衛數字 ── */
+.mini-stats{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:8px 0;}
+.mini-stat{background:rgba(255,255,255,0.5);border-radius:8px;padding:7px;text-align:center;}
+.mini-stat-num{font-family:'Noto Serif TC',serif;font-size:18px;font-weight:700;color:#0369a1;line-height:1;}
+.mini-stat-label{font-size:10px;color:#444;margin-top:2px;}
+
+/* ── 書籍卡片 ── */
+.book-card-inner{display:flex;gap:12px;align-items:flex-start;margin-bottom:8px;}
+.book-spine{width:44px;min-width:44px;height:62px;border-radius:3px;background:linear-gradient(135deg,#6d28d9,#a855f7);display:flex;align-items:center;justify-content:center;font-size:10px;color:#fff;font-weight:700;writing-mode:vertical-rl;letter-spacing:2px;font-family:'Noto Serif TC',serif;box-shadow:2px 2px 6px rgba(0,0,0,0.15);}
+.book-meta{font-size:12px;line-height:1.7;}
+.book-title-main{font-family:'Noto Serif TC',serif;font-size:13px;font-weight:700;color:#1a1a1a;line-height:1.3;margin-bottom:2px;}
+.book-author{font-size:11px;color:#6d28d9;font-weight:500;}
+.book-pub{font-size:10px;color:#888;margin-top:1px;}
+.book-blurb{font-size:12px;color:#2a1a1a;line-height:1.75;margin-bottom:4px;}
+
+/* ── 資源欄 ── */
+.info-card{background:#f0f9ff;border:1.5px solid #bae6fd;border-radius:12px;padding:12px;margin-bottom:10px;}
+.info-card h4{font-size:10px;letter-spacing:2px;color:#0369a1;font-weight:500;margin-bottom:6px;}
+.info-card ul{list-style:none;}
+.info-card ul li{font-size:12px;padding:4px 0;border-bottom:1px dashed #bae6fd;color:#1a1a1a;line-height:1.6;}
+.info-card ul li:last-child{border-bottom:none;}
+
+/* ── 結緣欄 ── */
+.kinship-card{background:#fde68a;border-radius:12px;padding:12px 16px;margin-bottom:10px;text-align:center;position:relative;}
+.kinship-card::before{content:'';position:absolute;top:4px;left:4px;right:4px;bottom:4px;border:0.5px solid rgba(0,0,0,0.15);border-radius:9px;pointer-events:none;}
+.kinship-card .label{display:inline-block;font-size:9px;letter-spacing:2px;background:rgba(0,0,0,0.1);border-radius:20px;padding:1px 9px;margin-bottom:6px;color:#333;font-weight:500;}
+.kinship-card .big{font-family:'Noto Serif TC',serif;font-size:16px;font-weight:700;margin:6px 0;color:#1a1a1a;}
+.kinship-card p{font-size:12.5px;line-height:1.9;color:#3a2000;}
+
+/* ── 底欄 ── */
+.footer-bar{background:#1a1a1a;color:#ccc;text-align:center;padding:10px;font-size:9.5px;letter-spacing:1.5px;line-height:1.6;}
+
+/* ── 文章覆蓋層 ── */
+.article-overlay{position:fixed;top:0;left:0;right:0;bottom:0;background:#fff;z-index:200;display:flex;flex-direction:column;transform:translateY(100%);transition:transform .35s cubic-bezier(.4,0,.2,1);overflow:hidden;}
+.article-overlay.open{transform:translateY(0);}
+.article-header{padding:16px 24px 12px;border-bottom:2px solid #1a1a1a;flex-shrink:0;background:#fff;}
+.article-header-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;}
+.back-btn{font-size:12px;font-weight:500;color:#1a1a1a;background:rgba(0,0,0,0.07);border-radius:20px;padding:5px 16px;cursor:pointer;border:none;font-family:'Noto Sans TC',sans-serif;}
+.back-btn:hover{background:rgba(0,0,0,0.14);}
+.art-tag{font-size:10px;letter-spacing:2px;border-radius:20px;padding:2px 10px;font-weight:500;background:rgba(0,0,0,0.08);}
+.art-title{font-family:'Noto Serif TC',serif;font-size:20px;font-weight:700;line-height:1.4;margin-bottom:5px;color:#1a1a1a;}
+.art-byline{font-size:11px;color:#888;letter-spacing:0.5px;}
+
+.article-body{padding:18px 24px;overflow-y:auto;flex:1;font-size:14px;line-height:2.05;color:#2a2a2a;font-family:'Noto Sans TC',sans-serif;background:#fff;}
+.article-body p{margin-bottom:16px;}
+.article-body h4{font-family:'Noto Serif TC',serif;font-size:16px;font-weight:700;margin:20px 0 8px;color:#1a1a1a;border-bottom:0.5px solid #ddd;padding-bottom:4px;}
+.article-body .apull{font-family:'Noto Serif TC',serif;font-size:15px;font-weight:700;border-left:4px solid #7c3aed;padding:9px 16px;margin:16px 0;background:#faf5ff;border-radius:0 8px 8px 0;line-height:1.7;color:#1a1a1a;}
+.article-body .apull-dark{font-family:'Noto Serif TC',serif;font-size:15px;font-weight:700;background:#1a1a1a;color:#f5c77e;padding:11px 18px;margin:16px 0;border-radius:8px;line-height:1.7;}
+.article-body .apull-red{font-family:'Noto Serif TC',serif;font-size:15px;font-weight:700;border-left:4px solid #e05a2b;padding:9px 16px;margin:16px 0;background:#fff8f5;border-radius:0 8px 8px 0;line-height:1.7;color:#1a1a1a;}
+.article-body .apull-rose{font-family:'Noto Serif TC',serif;font-size:15px;font-weight:700;border-left:4px solid #be123c;padding:9px 16px;margin:16px 0;background:#fff1f2;border-radius:0 8px 8px 0;line-height:1.7;color:#1a1a1a;}
+.article-body .apull-blue{font-family:'Noto Serif TC',serif;font-size:15px;font-weight:700;border-left:4px solid #0369a1;padding:9px 16px;margin:16px 0;background:#f0f9ff;border-radius:0 8px 8px 0;line-height:1.7;color:#1a1a1a;}
+.stat-inline{display:inline-block;background:#fecaca;border-radius:6px;padding:2px 8px;font-weight:500;font-size:14px;color:#9a1a1a;}
+.stat-inline-blue{display:inline-block;background:#bfdbfe;border-radius:6px;padding:2px 8px;font-weight:500;font-size:14px;color:#1e40af;}
+.stat-inline-rose{display:inline-block;background:#ffe4e6;border-radius:6px;padding:2px 8px;font-weight:500;font-size:14px;color:#be123c;}
+.demand-box{background:#f5f5f5;border-left:4px solid #1a1a1a;border-radius:0 8px 8px 0;padding:14px 18px;margin:16px 0;font-size:13.5px;line-height:2;color:#1a1a1a;}
+.school-list{font-size:12px;color:#555;line-height:2;column-count:2;column-gap:16px;margin-top:8px;}
+.role-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:16px 0;}
+.role-item{background:#e0f2fe;border-radius:8px;padding:10px 12px;font-size:13px;line-height:1.7;}
+.role-title{font-weight:500;color:#0369a1;margin-bottom:3px;}
+.finding-list{list-style:none;margin:10px 0;}
+.finding-list li{font-size:13.5px;padding:7px 0;border-bottom:0.5px dashed #fecdd3;line-height:1.8;}
+.finding-list li:last-child{border-bottom:none;}
+.finding-list li::before{content:"▸";color:#be123c;margin-right:6px;font-size:12px;}
+.book-detail-cover{width:70px;min-width:70px;height:98px;border-radius:4px;background:linear-gradient(135deg,#6d28d9,#a855f7);display:flex;align-items:center;justify-content:center;font-family:'Noto Serif TC',serif;font-size:11px;font-weight:700;color:#fff;writing-mode:vertical-rl;letter-spacing:3px;box-shadow:3px 3px 10px rgba(0,0,0,0.2);flex-shrink:0;}
+.recommend-box{background:#faf5ff;border:1px solid #d8b4fe;border-radius:8px;padding:12px 16px;margin:14px 0;font-size:13px;line-height:1.85;color:#4c1d95;}
+.ext-btn{display:flex;align-items:center;justify-content:center;gap:8px;margin:12px 0 4px;padding:12px;background:#1a1a1a;color:#fff;border:none;font-size:12px;cursor:pointer;border-radius:8px;width:100%;font-family:'Noto Serif TC',serif;letter-spacing:1px;text-decoration:none;}
+.ext-btn:hover{background:#333;}
+.ext-btn.blue{background:#0369a1;}.ext-btn.blue:hover{background:#0284c7;}
+.ext-btn.purple{background:#7c3aed;}.ext-btn.purple:hover{background:#6d28d9;}
+
+/* ── 響應式 ── */
+@media(max-width:600px){
+  .two-col-top,.cmhc-two,.two-col{grid-template-columns:1fr;}
+  .stat-bar,.research-stats{grid-template-columns:repeat(2,1fr);}
+  .paper-name{font-size:28px;letter-spacing:3px;}
+  .masthead-top{flex-direction:column;align-items:center;text-align:center;}
+  .masthead-meta.right{text-align:center;}
+  .school-list,.role-grid{column-count:1;grid-template-columns:1fr;}
+  .article-body{padding:14px 16px;}
+  .article-header{padding:12px 16px 10px;}
+}
+</style>
+</head>
+<body>
+
+<div class="paper">
+
+  <!-- 報頭 -->
+  <div class="masthead">
+    <div class="masthead-top">
+      <div class="masthead-meta">
+        試刊號・2026年春<br>
+        能力有限功德無量發行
+      </div>
+      <div class="masthead-center">
+        <div class="paper-name">相倚傍報你知</div>
+        <span class="paper-romanji">sann-uá-pn̄g　pò　lí　tsai</span>
+        <div class="paper-subtitle">社區精神病人陪伴與同行資訊共享平台</div>
+      </div>
+      <div class="masthead-meta right">
+        主編<br>
+        入人兜，鬥揣路小編<br>
+        歡迎結緣分享
+      </div>
+    </div>
+    <div class="nav-strip">
+      <div class="nav-item c1">新聞動態</div>
+      <div class="nav-item c2">研究新知</div>
+      <div class="nav-item c3">資源地圖</div>
+      <div class="nav-item c4">社區心衛</div>
+      <div class="nav-item c5">書籍分享</div>
+      <div class="nav-item c6">小編嘮叨</div>
+    </div>
+  </div>
+
+  <div class="page-body">
+
+    <!-- 第一焦點 -->
+    <div class="lead-block-dark" onclick="openArticle('statement')">
+      <div class="kicker-dark">社工日聯合聲明・2026.04.02</div>
+      <div class="headline-dark">守護社會安全網<br>拒絕讓社工成為體制缺漏下之承擔者</div>
+      <div class="sub-dark">社會工作／福利系（所）教師聯合聲明</div>
+      <div class="deck-dark">針對近日保母虐童致死案，檢察官以「過失致死罪」起訴第一線訪視社工——全台社工與福利系所教師聯合發聲：這不是個案失職，是體制缺漏。</div>
+      <div class="read-more-dark">點此閱讀全文 →</div>
+    </div>
+
+    <!-- 第二焦點 -->
+    <div class="lead-block-red" onclick="openArticle('socialwork')">
+      <div class="kicker-red">社工日調查・2026.04.02</div>
+      <div class="headline-red">誰來接住社工？近八成社工深陷過勞，制度支持僅28分「死當」</div>
+      <div class="deck-red">臺北市與高雄市社工職業工會聯合立委發布724名社工調查：47%重度過勞、67%出現替代性創傷，制度支持力平均28.62分全面告急。</div>
+      <div class="read-more-red">點此閱讀全文 →</div>
+    </div>
+
+    <!-- 數據橫幅 -->
+    <div class="stat-bar">
+      <div class="stat-item s1"><div class="stat-num">78%</div><div class="stat-label">中度以上過勞</div></div>
+      <div class="stat-item s2"><div class="stat-num">67%</div><div class="stat-label">出現替代性創傷</div></div>
+      <div class="stat-item s3"><div class="stat-num">28分</div><div class="stat-label">制度支持力（死當）</div></div>
+      <div class="stat-item s4"><div class="stat-num">724</div><div class="stat-label">受訪社工人數</div></div>
+    </div>
+
+    <!-- 新聞動態 + 研究新知 -->
+    <div class="two-col-top">
+      <div class="card bg-mint" onclick="openArticle('lifeline')">
+        <div class="label">新聞動態</div>
+        <h3>總統感謝生命線工作者　盼公私協力完善心理支持體系</h3>
+        <div class="byline">總統府新聞・2026.04.01</div>
+        <p>賴清德總統接見國際生命線台灣總會，每年接聽逾16萬通求助電話；政府將服務擴大至45歲以下青壯族群，已服務超過13萬人。</p>
+        <div><span class="tag-pill">心理健康</span><span class="tag-pill">自殺防治</span></div>
+        <div class="tap-hint">點擊閱讀全文 →</div>
+      </div>
+      <div class="card bg-rose" onclick="openArticle('research')">
+        <div class="label">研究新知</div>
+        <h3>父母因癌過世與兒少心理健康<br>20年美國人口建模研究</h3>
+        <div class="byline">探索大腦的會談地圖・JAMA Network Open 2025</div>
+        <div class="research-stats">
+          <div class="rs-item"><div class="rs-num">135萬</div><div class="rs-label">兒童喪親於癌症</div></div>
+          <div class="rs-item"><div class="rs-num">13歲</div><div class="rs-label">中位喪親年齡</div></div>
+          <div class="rs-item"><div class="rs-num">−12%</div><div class="rs-label">整體發生率下降</div></div>
+        </div>
+        <div><span class="tag-pill">兒少心理</span><span class="tag-pill">喪親</span><span class="tag-pill">JAMA</span></div>
+        <div class="tap-hint">點擊閱讀全文 →</div>
+      </div>
+    </div>
+
+    <!-- 社區心衛雙卡 -->
+    <div class="cmhc-two">
+      <div class="card bg-sky" onclick="openArticle('cmhc')">
+        <div class="label">社區心衛・資源地圖</div>
+        <h3>全國社區心理衛生中心<br>22縣市・71處據點</h3>
+        <div class="byline">衛福部心理健康司・更新至2026.03</div>
+        <div class="mini-stats">
+          <div class="mini-stat"><div class="mini-stat-num">22</div><div class="mini-stat-label">縣市全覆蓋</div></div>
+          <div class="mini-stat"><div class="mini-stat-num">71</div><div class="mini-stat-label">處服務據點</div></div>
+        </div>
+        <p>提供心理諮詢、危機處遇、轉介等在地服務，可下載完整通訊錄查詢各縣市據點。</p>
+        <div><span class="tag-pill">社區資源</span><span class="tag-pill">通訊錄</span></div>
+        <div class="tap-hint">點擊查看詳情 →</div>
+      </div>
+      <div class="card bg-sky2" onclick="openArticle('cmhc_story')">
+        <div class="label">社區心衛・深度報導</div>
+        <h3>強化社會安全網　社區心理衛生中心成為你的避風港</h3>
+        <div class="byline">衛福部電子季刊第36期・文｜林怡慧</div>
+        <p>以嘉義市社區心衛中心為例，從個案接觸、跨專業共案管理到「蒔嘉雅園」園藝治療⋯⋯</p>
+        <div class="pull-quote">「不同於醫院等待病人，我們主動走入社區。」</div>
+        <div><span class="tag-pill">實務故事</span><span class="tag-pill">嘉義市</span></div>
+        <div class="tap-hint">點擊閱讀全文 →</div>
+      </div>
+    </div>
+
+    <!-- 小編嘮叨 + 書籍/資源 -->
+    <div class="two-col">
+      <div class="card bg-orange" onclick="openArticle('editor')" style="border-radius:12px;">
+        <div class="label">小編嘮叨</div>
+        <h3>做這份報，我們到底在想什麼</h3>
+        <div class="byline">入人兜，鬥揣路小編・島編</div>
+        <p>《相倚傍報你知》是島編的新企劃，希望扮演助人長路上營養品或水分補充的角色，正如刊名「相倚傍」——台語之意為互相陪伴與依靠。</p>
+        <div><span class="tag-pill">小編心聲</span><span class="tag-pill">相倚傍</span><span class="tag-pill">社工日</span></div>
+        <div class="tap-hint">點擊閱讀全文 →</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <div class="card bg-lavbook" onclick="openArticle('book')" style="border-radius:12px;">
+          <div class="label">書籍分享</div>
+          <div class="book-card-inner">
+            <div class="book-spine">修復事典</div>
+            <div class="book-meta">
+              <div class="book-title-main">修復事典<br>被留下來的我們，不用急著好起來</div>
+              <div class="book-author">江佩津 著</div>
+              <div class="book-pub">大塊文化・2022</div>
+            </div>
+          </div>
+          <div class="book-blurb">自殺者遺族的散文創作。悲傷與失落一直都在，但相生相應的修復與療癒也會一直存在著。</div>
+          <div><span class="tag-pill">遺族</span><span class="tag-pill">悲傷陪伴</span></div>
+          <div class="tap-hint">點擊閱讀介紹 →</div>
+        </div>
+        <div class="info-card">
+          <h4>資源地圖・常用專線</h4>
+          <ul>
+            <li>安心專線 1925（24小時）</li>
+            <li>家庭照顧者關懷 0800-507272</li>
+            <li>社會安全網 1957</li>
+            <li>心理健康司 02-8590-6666</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 結緣欄 -->
+    <div class="kinship-card">
+      <div class="label">歡迎結緣分享</div>
+      <div class="big">🙏 歡迎分享給所有入人兜、鬥揣路的夥伴</div>
+      <p>社區關懷訪視員、自殺關懷訪視員、心衛社工、居家護理師、公衛護理師、社區精神工作社工、所有會走入服務對象家裡的社區工作者，以及任何感興趣的朋友。</p>
+    </div>
+
+  </div><!-- /page-body -->
+
+  <div class="footer-bar">
+    相倚傍報你知・試刊號・2026年春・能力有限功德無量發行
+  </div>
+
+</div><!-- /paper -->
+
+<!-- 文章覆蓋層 -->
+<div class="article-overlay" id="articleOverlay">
+  <div class="article-header">
+    <div class="article-header-top">
+      <button class="back-btn" onclick="closeArticle()">← 返回</button>
+      <span class="art-tag" id="artTag"></span>
+    </div>
+    <div class="art-title" id="artTitle"></div>
+    <div class="art-byline" id="artByline"></div>
+  </div>
+  <div class="article-body" id="artBody"></div>
+</div>
+
+<script>
+const arts = {
+  statement: {
+    tag: '社工日聯合聲明',
+    title: '守護社會安全網　拒絕讓社工成為體制缺漏下之承擔者',
+    byline: '社會工作／福利系（所）教師聯合聲明・2026.04.02',
+    body: `
+      <p>針對近日保母虐童致死案，檢察官以「過失致死罪」起訴第一線訪視社工，並主張其具備「保證人地位」一事，我們身為社會工作／福利教育工作者，對此深感沉痛與不忍。孩子的生命逝去是社會共同的遺憾，但若僅透過司法體系將結構性的悲劇歸咎於個人，不僅無法縫補社會安全網，更將徹底摧毀社會工作專業。</p>
+      <h4>一、法律定位的過度擴張：社工不應承擔超乎職權的保證人責任</h4>
+      <p>司法認定社工對受助者具備「保證人地位」，意指社工須對受助者的生命安全負擔絕對法律義務。然而，社工的工作本質是「資源連結」與「風險評估」，絕非24小時的貼身監護。這無異於要求社工具備預知犯罪的超自然能力。</p>
+      <div class="apull-dark">這種法律詮釋的擴張，將使社工成為所有社會風險最末端的責任承擔者。</div>
+      <h4>二、制度漏洞的全面轉嫁：看見集體忽視的系統性問題</h4>
+      <p>此案反映出居家托育中心督導機制、居家托育人員職能鑑定、跨單位橫向溝通失靈等深層系統漏洞。若只處理「解決問題的人」，而不處理「產生問題的體制」，悲劇只會不斷輪迴。</p>
+      <h4>三、專業精神的毀滅性打擊：後撤效應將瓦解社會安全網</h4>
+      <p>此次起訴已在實務界與校園學子間引發強烈震盪。如果年輕一代不再願意投入高風險的兒少保護工作，這道社會安全網將自此崩解，誰來守護下一個孩子？</p>
+      <div class="demand-box">
+        <strong>我們的訴求</strong><br>
+        我們呼籲司法機關應審酌社工實務的侷限性，客觀評核其執行職務之合理範圍，切莫以「結果論」輕易羅織罪名。同時，請社會大眾與政府正視社工的勞動困境。孩子的生命無價，我們同樣痛心；但唯有建立一個權責界定清楚、並承認專業判斷不確定性的體制，才是對逝去生命真正的尊重與彌補。
+      </div>
+      <h4>共同聲明之系所（按筆劃順序排）</h4>
+      <div class="school-list">
+        中國文化大學社會福利學系・天主教輔仁大學社會工作學系・佛光大學社會工作學系・育達科技大學社會工作系・亞洲大學社會工作學系・東吳大學社會工作學系・東海大學社會工作學系・長榮大學社會工作學系・高雄醫學大學醫學社會學與社會工作學系・國立中正大學社會福利學系暨研究所・國立東華大學民族發展與社會工作學系・國立金門大學社會工作學系・國立屏東科技大學社會工作學系・國立政治大學社會工作研究所・國立暨南國際大學社政策與社會工作學系・國立暨南國際大學社會原住民文化產業與社會工作學士位學程原住民族專班・國立臺灣大學社會工作學系・國立臺灣師範大學社會工作學研究所・嘉南藥理大學社會工作學系・靜宜大學社會工作與兒童少年福利學系
+      </div>
+      <a class="ext-btn" href="https://udn.com/news/story/7266/9418160" target="_blank">🔗 閱讀聯合新聞網完整報導</a>
+    `
+  },
+  socialwork: {
+    tag: '社工日調查',
+    title: '誰來接住社工？2026年調查揭露：近八成社工深陷過勞，制度支持僅28分「死當」',
+    byline: '臺北市・高雄市社會工作人員職業工會・2026.04.02',
+    body: `
+      <p>在4月2日臺灣社工日前夕，臺北市與高雄市社會工作人員職業工會聯合立法委員吳沛憶、黃捷召開記者會，發布「2026年臺灣社會工作職業安全心理衛生調查」結果。這份針對<span class="stat-inline">724名社工</span>的問卷調查揭示了令人揪心的真相：臺灣社工正處於極度過勞與心理健康崩潰的邊緣。</p>
+      <h4>每兩名社工就有一人重度過勞</h4>
+      <p>調查顯示，有<span class="stat-inline">78.18%</span>的社工處於中度以上過勞狀態，其中「重度過勞」比例高達<span class="stat-inline">47.24%</span>，相當於每兩名社工中就有一人體力與心力已達極限。</p>
+      <p>除了過勞，社工的心理健康指標也全面亮起紅燈：<span class="stat-inline">72.10%</span>面臨高度職場壓力，<span class="stat-inline">67.27%</span>出現「替代性創傷」，<span class="stat-inline">46.41%</span>則有職場憂鬱傾向。</p>
+      <div class="apull-red">「當社會依賴社工守住社會安全網的同時，也應該思考，誰來守住社工？」</div>
+      <p>記者會現場，工會代表用多個身心科藥袋拼湊成「愛心」形狀，諷刺社工是用自己的健康在撐起專業服務。過去半年內，有<span class="stat-inline">26.8%</span>的社工曾因工作因素就醫或接受心理諮商，公部門約用人員更高達<span class="stat-inline">36.4%</span>。</p>
+      <h4>制度支持力28分「死當」</h4>
+      <p>本次調查中得分最低的指標是「制度支持力」，平均僅得<span class="stat-inline">28.62分</span>。評鑑制度無法反映真實狀況（14.64分）、社會大眾對社工的期待與現實存在落差（15.85分），以及政策變動頻繁增加負擔、決策者忽略第一線意見。</p>
+      <h4>立委籲打造社工心理安全網</h4>
+      <p>立法委員黃捷指出，將推動案量上限、強化人身安全保護機制，並研議將「替代性創傷」納入職業傷害認定。立法委員吳沛憶主張「行政減量」，中央與地方需攜手打造「社工心理安全網」。</p>
+      <div class="apull-red">守護守護者——社工是社會安全網最前線的專業力量，當安全網不斷擴張，第一線人員的勞動條件不能繼續被忽視。</div>
+      <a class="ext-btn" href="https://www.facebook.com/tpswunion/posts/pfbid026qRLEzZazMjTUhwvTxCBZk7BtDptWuXP7TSibdTDErmUBr8L2LpYuSrt5aecb9UAl" target="_blank">🔗 前往臺北市社工職業工會臉書貼文</a>
+    `
+  },
+  lifeline: {
+    tag: '新聞動態',
+    title: '總統感謝「生命線」工作者無私奉獻　盼公私協力攜手完善心理支持體系',
+    byline: '中華民國總統府新聞・2026.04.01',
+    body: `
+      <p>賴清德總統於4月1日下午接見社團法人國際生命線台灣總會理監事及第一屆「珍愛生命線十大生命救援獎」獲獎人，肯定生命線夥伴們是國家推動心理健康政策不可或缺的重要夥伴，也是政府與民間協力的最佳典範。</p>
+      <h4>自殺防治刻不容緩</h4>
+      <p>總統指出，自殺數據是國家心理福祉的重要指標，前年自殺重返國人十大死因第十位，顯示此議題的急迫性不容忽視。自殺風險因子多元，往往是情緒、健康、家庭以及經濟壓力交織的結果。</p>
+      <div class="apull-blue">「政府將深化推動『健康臺灣』政策，從生理到心理，國人的健康福祉就是國家繁榮的根基。」</div>
+      <h4>青壯族群心理支持擴大</h4>
+      <p>政府將服務對象從15至30歲擴大至45歲以下的青壯族群，截至今年2月底，已服務超過<span class="stat-inline-blue">13萬人</span>。各縣市逐年增設「社區心理衛生中心」，提升心理健康服務的可近性，讓國人在面對壓力時，能更早、也更容易獲得協助。</p>
+      <h4>生命線的關鍵角色</h4>
+      <p>生命線長期在臺灣自殺防治體系中扮演至關重要的角色，每年接聽超過<span class="stat-inline-blue">16萬通</span>求助電話，與衛福部1925安心專線共同在危機時刻提供民眾情緒支持。面對青年求助方式走向數位化，生命線更率先推動青少年網路文字協談，以匿名、低門檻、即時性等方式，成功觸及不易求助的族群。</p>
+      <a class="ext-btn" href="https://www.president.gov.tw/News/39942" target="_blank">🔗 閱讀總統府完整新聞稿</a>
+    `
+  },
+  research: {
+    tag: '研究新知',
+    title: '父母因癌症過世與兒少心理健康——1999–2020年美國人口建模研究',
+    byline: '探索大腦的會談地圖 整理・JAMA Network Open 2025;8(7):e2519106',
+    body: `
+      <p>父母因癌症過世與子女的自我傷害風險、短期及長期心理健康問題高度相關。然而每年實際有多少未成年人經歷此類喪親事件，先前並無精確估算。</p>
+      <p>一項刊登在《JAMA Network Open》的研究透過人口建模方式，推估1999–2020年間全美國18歲以下兒少喪親於癌症的情形。</p>
+      <h4>研究方法</h4>
+      <p>這是一項重複橫斷式回溯建模研究，整合美國人口普查資料、國家健康統計中心（NCHS）死亡資料、Human Fertility Collection之生育率資料等，估算每年喪親兒童人數與每千名兒童中的發生率。</p>
+      <h4>主要發現</h4>
+      <ul class="finding-list">
+        <li>全期間約有<span class="stat-inline-rose">135萬名兒童</span>在18歲前失去至少一位罹癌過世的父母（95% CI: 1,303,000–1,398,000）</li>
+        <li>2020年估計有<span class="stat-inline-rose">56,300名兒童</span>的父母死於癌症（每千名兒童0.77人）</li>
+        <li>其中約25,500人失去母親，30,400人失去父親</li>
+        <li>中位年齡為<span class="stat-inline-rose">13歲</span>，36%年齡小於10歲</li>
+      </ul>
+      <div class="apull-rose">1999–2020年間整體發生率下降12%，父親死亡下降幅度（−15%）高於母親（−9%）。</div>
+      <h4>癌症別趨勢</h4>
+      <p>按癌別分類，除消化系統與生殖系統癌症外，大多癌症導致之父母死亡率呈下降趨勢。</p>
+      <h4>對實務工作的啟示</h4>
+      <p>這項研究揭示喪親於癌症的兒少規模龐大，且有相當比例在年幼時即經歷失親。對於社工、心理衛生工作者而言，喪親兒少的悲傷陪伴與心理支持，是社區照顧中不可忽視的一環。</p>
+      <a class="ext-btn" href="https://www.facebook.com/InterviewMap/posts/pfbid02D6sWDUKYc2UgpF99YuKQYVZoraXNg2himHryaiZLXFJR3moRePzNZMbfH6oGY5etl" target="_blank">🔗 前往「探索大腦的會談地圖」原貼文</a>
+    `
+  },
+  cmhc: {
+    tag: '社區心衛・資源地圖',
+    title: '全國社區心理衛生中心——22縣市・71處據點',
+    byline: '衛福部心理健康司・更新至2026年3月',
+    body: `
+      <p>衛福部心理健康司依「強化社會安全網第二期計畫」，以每33萬人口設置一處的原則，在全台22縣市布建<span class="stat-inline-blue">71處</span>社區心理衛生中心，提供在地化的心理健康服務。</p>
+      <h4>服務內容</h4>
+      <p>社區心理衛生中心提供整合性服務，就近提供民眾心理諮詢及諮商，透過個案管理協助社區中的精神病人及自殺通報個案，銜接醫療與跨網絡資源，不漏接每一個有心理衛生服務需求的民眾。</p>
+      <h4>各類專業人力</h4>
+      <div class="role-grid">
+        <div class="role-item"><div class="role-title">心理衛生社工</div>處理複雜精神合併多重議題個案，提供整合性個案管理服務</div>
+        <div class="role-item"><div class="role-title">關懷訪視員</div>提供精神及自殺通報個案關懷訪視、需求評估及資源連結</div>
+        <div class="role-item"><div class="role-title">臨床／諮商心理師</div>提供心理諮商、治療服務</div>
+        <div class="role-item"><div class="role-title">護理師／職能治療師</div>精神疾病醫療諮詢、職能評估與復健活動</div>
+      </div>
+      <a class="ext-btn blue" href="https://dep.mohw.gov.tw/domhaoh/cp-6435-70356-107.html" target="_blank">🔗 查詢全國社區心理衛生中心通訊錄</a>
+    `
+  },
+  cmhc_story: {
+    tag: '社區心衛・深度報導',
+    title: '強化社會安全網　支持心理健康——社區心理衛生中心成為你的避風港',
+    byline: '衛福部電子季刊第36期・文｜林怡慧　受訪｜嘉義市社區心理衛生中心督導 魏廷融',
+    body: `
+      <p>近年來，我國發生多起與精神病人相關的社會事件，突顯出強化社會安全與照顧體系等議題的重要性。在「強化社會安全網第二期計畫」及修正後的《精神衛生法》中，皆將積極布建社區心理衛生中心列為重點工作，確保從精神醫療機構到社區，不漏接每一個有心理衛生服務需求的民眾。</p>
+      <h4>「以家庭為基礎、以社區為基石」</h4>
+      <p>嘉義市社區心理衛生中心督導魏廷融表示，精神病人在醫院接受專業治療後，多數人仍會回到社區生活，此時社區心理衛生中心就扮演了一個橋樑角色，銜接病人離開醫院後需要持續追蹤、提供關懷服務的工作。</p>
+      <div class="apull-blue">「不同於醫療院所被動等待病人，社區心理衛生中心以個案管理為基礎，主動走入社區。」</div>
+      <h4>跨專業共案管理模式</h4>
+      <p>嘉義市社區心理衛生中心打破各專業的服務框架，讓心理師、護理師、職能治療師與關懷訪視員、心理衛生社工，一起進入個案家中提供個案與家庭跨專業的心理衛生服務，滿足個案多面向的服務需求，增進服務的廣度及深度。</p>
+      <p>魏廷融以一位年紀很輕的個案為例——因精神疾病對生活帶來的影響，出院後復元過程較為孤單，透過社區心理衛生中心引入相關資源，讓個案在精神障礙者會所找到同在精神疾病復元之路的同儕，在共同支持及持續關懷下，也找到生活的目標及方向。</p>
+      <h4>蒔嘉雅園：園藝治療走進社區</h4>
+      <p>嘉義市社區心理衛生中心設置在原大同商職閒置的校園空間裡，運用園藝治療概念將校園綠地活化，開闢了「蒔嘉雅園」。社區復健精神個案可在大自然場域中，透過職能治療師設計的多元復健內容，體驗規律生活、提升自立能力。</p>
+      <div class="apull-blue">「期待透過各項宣導活動，將心理健康意識深耕鄰里，讓精神疾病康復者也能夠與居民在社區裡一起生活，共生共榮。」</div>
+      <a class="ext-btn blue" href="https://www.mohwpaper.tw/adv3/maz36/utx02x.asp" target="_blank">🔗 閱讀衛福部季刊完整報導</a>
+    `
+  },
+  book: {
+    tag: '書籍分享',
+    title: '修復事典：被留下來的我們，不用急著好起來',
+    byline: '江佩津 著・大塊文化出版・2022',
+    body: `
+      <div style="display:flex;gap:16px;align-items:flex-start;margin-bottom:18px;">
+        <div class="book-detail-cover">修復事典</div>
+        <div style="flex:1;">
+          <p style="font-size:13px;color:#6d28d9;font-weight:500;margin-bottom:5px;">江佩津（佩妮誰）著</p>
+          <p style="font-size:12.5px;color:#555;line-height:1.7;">大塊文化出版・2022年12月<br>ISBN 9786267206461・236頁</p>
+          <p style="font-size:12px;color:#888;margin-top:4px;">心理勵志・散文</p>
+        </div>
+      </div>
+      <p>江佩津的母親因長期病痛選擇以炭火離世。作為「自殺者遺族」，她以記者之眼反轉鏡頭，誠實記錄了失去摯親之後，那些關於物件、情緒、與生活重建的點點滴滴。</p>
+      <h4>三輯結構</h4>
+      <p><strong>物</strong>——迷你倉、泡菜、保單、木炭⋯⋯日常物件成為與離開者千絲萬縷的回憶。<br><strong>情緒</strong>——自責、罪惡感、憤世嫉俗，遺族的情緒不只有悲傷，本輯也收錄她對其他遺族的訪談。<br><strong>生活</strong>——諮商、朝聖之路、移地駐村，尋找前進的理由與重建生活的可能。</p>
+      <div class="recommend-box">「佩津還在路上。我們始終都在路上。《修復事典》不是一本已完成之書，人世道途，新的悲傷隨時來臨，修復不曾停止。然而我知道，在悲傷的背面，其實蘊藏深刻的愛。」——吳妮民（醫師／作家）</div>
+      <div class="recommend-box">「這是一本自殺者遺族，面對生活頓時掏空，重新填補之書。字句外表沉著，內裡卻痛。人生無常，惟修復是恆定。」——黃信恩（作家）</div>
+      <h4>為什麼推薦給相倚傍的讀者？</h4>
+      <p>書中誠實呈現了遺族的悲傷、參加自殺者遺族社團的歷程、以及接受心理諮商的真實感受。對於社工、心理衛生工作者，這本書是理解「被留下的人」最深刻的入口；對於正在陪伴遺族的夥伴，它是一本難得坦誠的參考書。</p>
+      <a class="ext-btn purple" href="https://www.taaze.tw/products/11100997108.html" target="_blank">🔗 前往 TAAZE 讀冊生活購買或借閱查詢</a>
+    `
+  },
+  editor: {
+    tag: '小編嘮叨',
+    title: '做這份報，我們到底在想什麼',
+    byline: '入人兜，鬥揣路小編・島編',
+    body: `
+      <p>《相倚傍sann-uá-pn̄g報你知》是「入人兜，鬥揣路」小編之一的島編的新企劃，想藉由整理與編撰跟社區精神病人陪伴與照顧工作、自殺關懷訪視工作與社區心理健康服務相關的資訊，可能是政策、實務、倡議、研究、書寫、影視音樂⋯⋯等領域，希望可以扮演助人長路上營養品或水分補充的角色。因為這個粉專成立初衷是希望能成為各位走入社區，踏入案家夥伴的後盾，正如刊名「相倚傍」，台語之意為互相陪伴與依靠。</p>
+      <p>本來預定4月2日發刊，一來是為了呼應台灣的社工日，再者也因為我們有很多工作者是社工背景，更別說入家工作很需要跟不同領域的社工合作協力，所以彼此看見與相挺是重要的。但因為藉助AI編製，技術上出了點小問題，才延至今日發佈。</p>
+      <p>這次出刊時間較為急促，因此多以重要資訊摘要與分享為主，未來如希望讀到哪一類的資訊或文章，也請不要客氣於粉專留言或私訊給我們。</p>
+      <p>若有夥伴想投稿，特別是實務經驗分享，非常歡迎絕對歡迎，可惜礙於無本經營，資金匱乏，暫無稿費酬謝，但若不嫌棄，島編可提供其他替代感謝方式。</p>
+      <p>人與人的會遇都是難得的緣分，今年嘗試以此新形式與大家在網路空間相遇，希望未來有更多的機會，可以讓從事入家工作的夥伴進一步的交流。</p>
+      <p style="font-family:'Noto Serif TC',serif;font-size:15px;font-weight:700;color:#7c4a00;margin-top:8px;">祝春好日足</p>
+    `
+  }
+};
+
+function openArticle(id) {
+  const a = arts[id];
+  document.getElementById('artTag').textContent = a.tag;
+  document.getElementById('artTitle').textContent = a.title;
+  document.getElementById('artByline').textContent = a.byline;
+  document.getElementById('artBody').innerHTML = a.body;
+  document.getElementById('articleOverlay').classList.add('open');
+  document.getElementById('artBody').scrollTop = 0;
+  document.body.style.overflow = 'hidden';
+}
+
+function closeArticle() {
+  document.getElementById('articleOverlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closeArticle();
+});
+</script>
+
+</body>
+</html>
